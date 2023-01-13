@@ -10,11 +10,11 @@
         
         
   #### vcariable at task level
-  - name: Declare variable at Task level
-   hosts: all
-   connection: local
+- name: Declare variable at Task level
+  hosts: all
+  connection: local
   
-   tasks:
+  tasks:
    - name: Access a variable
      ansible.builtin.debug:
         msg: URL == {{URL}}

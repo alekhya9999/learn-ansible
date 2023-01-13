@@ -33,15 +33,14 @@
      ansible.builtin.debug:
         msg: URL == {{URL}}
  
- ### Declare variable from inventory file
+##### variable from inventory file
 - name: Declare variable from inventory file
   hosts: all
   connection: local
   tasks:
-   - name: Access a variable
-     ansible.builtin.debug:
-     msg: URL == {{URL}}
- 
+    - name: Access variable
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
  
  
                 

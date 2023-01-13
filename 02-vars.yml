@@ -9,8 +9,8 @@
         msg: URL == {{URL}}
         
         
-        
- - name: Declare variable at Task level
+  #### vcariable at task level
+  - name: Declare variable at Task level
    hosts: all
    connection: local
   

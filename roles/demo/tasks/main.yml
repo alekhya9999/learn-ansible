@@ -2,8 +2,6 @@
   ansible.builtin.debug:
     msg: Hello From Role
     
-- name: Demo on roles
-   hosts: all
-   connection: local
-   roles:
-     - demo
+- name: print Url
+  ansible.builtin.debug:
+   msg: URL == {{URL}}

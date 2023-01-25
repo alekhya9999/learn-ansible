@@ -4,4 +4,4 @@
     - name: string conditions
       debug:
         msg: fruit name is Apple
-      when: fruit_name == "apple"
+      when: fruit_name == "Apple"

@@ -1,0 +1,9 @@
+- name: Demo on lopps
+  hosts: all
+  tasks:
+   - name: print fruit name
+     debug:
+      msg: Fruit name is {{item}}
+     loop:
+         - apple
+         - banana

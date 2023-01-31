@@ -1,0 +1,6 @@
+- name: read a value from Stored parameters
+  hosts: localhost
+  connection: local
+  tasks:  
+    - debug:
+        msg: "{{ lookup('test', 'Hello', region='us-east-1' ) }}"
